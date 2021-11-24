@@ -1,0 +1,88 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: white;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    box-shadow: rgba(calc(255 - 3), calc(255 - 8), calc(255 - 20), 0.1) 0px 0.15rem 0.5rem, rgba(calc(255 - 2), calc(255 - 8), calc(255 - 20), 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+
+}
+
+/* unvisited link */
+.card a:link {
+    color: #8585FF;
+    font-weight: normal;
+}
+
+/* visited link */
+.card a:visited {
+    color: #96E9B8;
+}
+
+/* mouse over link */
+.card a:hover {
+    font-weight: bold;
+}
+
+/* selected link */
+.card a:active {
+    color: #7DB5ED;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+    
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
+
+#horizontal{
+    color: #D30731;
+    border: 1px solid #D30731;
+}
+
+.card > img{
+    height: auto;
+    width: 100%;
+}
+
+.centreDiv{
+    margin: auto;
+  width: 50%;
+}
+
